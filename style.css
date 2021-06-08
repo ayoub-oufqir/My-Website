@@ -1,0 +1,249 @@
+/*colors
+rgba(23,23,23,.8)
+*/
+/*#d8e9f3 #b2d3e6 #8dbdd8 #68a7ca*/
+.hr1{
+    
+    border: 0;
+    height: 2px !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) !important;
+    background-color: unset;
+}
+div p{
+    margin: 0;
+}
+/*---------------------Nav BAR---------------------*/
+.bar{
+    width:100%;
+    height: fit-content;
+    background-color: rgb(178, 211, 230, 0.8);
+    padding: 10px 10px;
+    
+}
+.a-bar{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:  rgb(77, 125, 151);
+    font-family: 'Farro', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+}
+.a-bar:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*----------------My photo-----------------*/
+.photo{
+    width: 25%;
+    height:auto;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 20px 0 ;
+    
+}
+.summary{
+    padding: 0 0 20px 0;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+/*--------------------- container ---------------------*/
+.cont{
+    max-width: 1200px;
+    margin: auto;
+    /*border: 2px solid black;*/
+    padding: 0 15px;
+}
+body{
+    display: block;
+    margin: 0 8px;
+}
+/*---------------------------- I put this one here because it beats the one inside media queries----------------------------*/
+#input-email {
+    width: 30%;
+    padding: 0 0 5px 5px;
+    border: 2px solid rgb(104, 104, 104);
+    border-radius: 4px;
+}
+@media screen and (max-width: 900px) {
+    #input-email {
+        width: 80%;
+        padding: 0 0 5px 5px;
+        border: 2px solid rgb(104, 104, 104);
+        border-radius: 4px;
+    }
+    .bar{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        grid-template-rows: 1fr;       
+    }
+    .a-bar{
+        padding: 3px;
+        margin: auto;
+    }
+    .photo{
+        width: 45%;
+    }
+    .summary{
+        padding: 0 0 20px 0;
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    
+}
+/*.myP{
+    font-size:100%;
+}*/
+
+
+/*--------------------CV link------------------*/
+.cvlink{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(178, 211, 230, 0.8);
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 25px auto;
+}
+/*rgb(114, 195, 245)*/
+.cvlink:hover{
+    color: rgba(0, 0, 0);
+}
+.contact{
+    border-radius: 5px;
+    padding: 8px 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr;
+    /*max-width:100%;*/
+    margin: 30px auto 30px auto;
+    background-color: rgb(0, 255, 255, 0.2);
+    text-align: center;
+    font-size: 1.3rem;
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(114, 195, 245);
+}
+.emailp{
+    display: inline;
+    margin: auto;
+}
+.Linkedin-Logo{
+    margin: 10px 3px 10px 10px;
+    height: 40px;
+}
+
+.contactyoup{
+    margin: 0 0 20px 0;
+}
+
+/*-----------------Copyright---------------------*/
+.copyright{
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    line-height: 50px;
+}
+.copyrightdiv{
+    background-color: rgb(178, 211, 230, 0.8);
+    width: 100%;
+    height: 50px;
+}
+/*---------------------------Mes Projets-----------------------------*/
+.grid-container2 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr;
+
+}
+.proj-title{
+    color: cornflowerblue;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+/*---------------------------les compétences-----------------------------*/
+.comp-title{
+    color: cornflowerblue;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.competence{
+    margin: 0 0 30px 0;
+    background-color: rgb(216, 233, 243);
+    padding: auto;
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+.pemail{
+    
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 0 30px 0;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr;
+    /*gap: 0px 0px;*/
+    /*grid-template-areas:
+      ". ."
+      ". ."
+      " . ";*/
+}
+.c1, .c2, .c3{
+    margin: 10px 10px 10px 10px;
+}
+.c4, .c5{
+    padding: 0px 10px 0 10px;
+    margin: 0 10px 10px 10px;
+}
+.child{
+    
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(104, 167, 202, 0.3);
+}
+.child:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.ichild{
+    margin: auto;
+}
+/*--------------------------- enter you email  -----------------------------*/
+
+.btn-submit{
+    width: 140px;
+    margin: 10px 0 0 0 ;
+    text-align: center;
+    background-color: rgb(100, 210, 237);
+    border-radius: 15px;
+}
+
+
+
+/*
+grid-template-areas:". . ."; this proprety can cause awful problems so try to avoid it (mes projets n'est pas responsive when i use this proprety)
+try to delete one line a time to figure out which one is responsible for the problem you're facing
+media queries are very useful for responsivness
+margin:auto; works with both inline and block elements but block elements need a width before auto margins will work
+grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); #the best way to make your grid responsive
+*/
